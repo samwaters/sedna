@@ -44,3 +44,4 @@ The application can be started, in the mode specified above, using `yarn start`,
 * Server side rendering
 * Lazy loading
 * Splitting UI components out into separate files rather than cluttering the main component
+* Better mobile support
