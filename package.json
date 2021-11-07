@@ -1,0 +1,45 @@
+{
+  "name": "sedna",
+  "version": "1.0.0",
+  "description": "SEDNA Technical Test",
+  "main": "index.ts",
+  "repository": "https://github.com/samwaters/sedna.git",
+  "author": "Sam Waters <sam@samwaters.com>",
+  "license": "GPL-3.0",
+  "private": false,
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "@babel/preset-typescript": "^7.16.0",
+    "@babel/preset-react": "^7.16.0",
+    "@babel/runtime": "^7.16.0",
+    "@typescript-eslint/eslint-plugin": "^5.3.0",
+    "@typescript-eslint/parser": "^5.3.0",
+    "babel-loader": "^8.2.3",
+    "babel-polyfill": "^6.26.0",
+    "eslint": "^8.1.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-react": "^7.26.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.6",
+    "react-router": "^6.0.0",
+    "react-router-dom": "^6.0.1",
+    "redux": "^4.1.2",
+    "redux-saga": "^1.1.3",
+    "styled-components": "^5.3.3",
+    "styled-reset": "^4.3.4",
+    "typescript": "^4.4.4",
+    "webpack": "^5.62.1",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.4.0"
+  },
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack serve"
+  }
+}
