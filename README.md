@@ -4,6 +4,8 @@
 Brief: Create an application in which users can add up to 5 tags to a list of films.  
 Tags should be removable, but not editable, and should be persisted across browser sessions.  
 
+See a deployed version here: [https://samwaters.github.io/sedna/](https://samwaters.github.io/sedna/)
+
 ## Project Structure
 The project is built on React, using Styled Components for the UI, and the source is written in Typescript.  
 Data is managed in Redux, and processed using Sagas. It is also synced into localstorage.  
