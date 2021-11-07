@@ -6,7 +6,7 @@ import { getTagsForItem } from 'selectors/tags.selector'
 
 function * addTagToItem(action: Action) {
   const tags = yield select(getTagsForItem(action.payload.itemId))
-  if(tags.length >= 5) {
+  if(!action.payload.tag || tags.length >= 5) {
     yield put(addTagFailed())
   } else {
     const allTags = [...tags, {tag: action.payload.tag, tagId: action.payload.tagId}]
