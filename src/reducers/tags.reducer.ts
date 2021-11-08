@@ -9,6 +9,15 @@ const initialState: TagsState = {
 
 }
 
+/*
+ Tag data structure:
+ tags: {
+  1: [{tag: 'FOO', tagId: 1636365531541}, {tag: 'BAR', tagId: 1636365532641}],
+  2: [{tag: 'BAZ', tagId: 1636365533731}]
+ }
+ Where 1 and 2 are the ids from the API, and tagIds are unique IDs for the tags themselves
+ */
+
 export const tagsReducer = (state: TagsState = initialState, action: Action) => {
   switch (action.type) {
     case SET_ALL_TAGS:
