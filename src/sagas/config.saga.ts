@@ -1,6 +1,8 @@
 import { put, takeEvery } from '@redux-saga/core/effects'
 import { LOAD_CONFIG, loadConfigFailed, loadConfigSuccess } from 'actions/config.actions'
 
+// This is defined in the webpack config (via DefinePlugin)
+// Depending on the build mode
 declare var config
 
 function * loadAppConfig() {

@@ -87,6 +87,12 @@ export const DataItem = ({item}: DataItemProps) => {
     setTagName(e.currentTarget.value)
   }
 
+  const handleKeyPress = (e: KeyboardEvent) => {
+    if(e.key === 'Enter') {
+      handleAddTag()
+    }
+  }
+
   if(searchTerm) {
     const regex = new RegExp(searchTerm, 'i')
     if(!tags.find(tag => tag.tag.match(regex))) {
@@ -106,7 +112,12 @@ export const DataItem = ({item}: DataItemProps) => {
       {tags.map(({tag, tagId}) => <Tag itemId={item.id} key={tagId} tagId={tagId} text={tag} />)}
     </DataItemTags>
     <DataItemInput>
-      <DataItemInputField onChange={handleInputChange} placeholder="Tag Name" value={tagName} />
+      <DataItemInputField
+        onChange={handleInputChange}
+        onKeyPress={handleKeyPress}
+        placeholder="Tag Name"
+        value={tagName}
+      />
       <DataItemInputButton onClick={handleAddTag}>Add Tag</DataItemInputButton>
     </DataItemInput>
   </DataItemContainer>

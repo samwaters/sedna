@@ -41,6 +41,7 @@ module.exports = {
     },
     plugins: [
         new webpack.optimize.SplitChunksPlugin(),
+        // Config for the application, loaded in config.saga.ts
         new webpack.DefinePlugin({
             config: JSON.stringify(require(path.join(
                 __dirname,
